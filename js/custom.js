@@ -163,12 +163,3 @@
   });
   // End trigger owl
 
-  
-  // Start trigger google map
-  function initMap() {
-    var uluru = {lat: 31.038655, lng: 31.372497};
-    var map = new google.maps.Map(document.getElementById('map'), {zoom: 4, center: uluru});
-    var marker = new google.maps.Marker({position: uluru, map: map});
-    // creat an empty div with id map to init the map in your browser
-  }
-  // End trigger google map
