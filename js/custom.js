@@ -114,20 +114,18 @@
 })();
 
 
-  // Start trigger NiceScroll
-  $("body").niceScroll({
-    cursorcolor: "#333",
-    cursorwidth: "13px",
-    background: "",
-    cursorborder: "1px solid aquamarine",
-    cursorborderradius: 10,
-    zindex: 999,
-  });
-  // End trigger NiceScroll
-
-  // Start trigger WoW.js
-  new WOW().init();
-  // End trigger WoW.js
+  if ($(window).width() >= 992) {
+    // Start trigger NiceScroll
+      $("body").niceScroll({
+        cursorcolor: "#333",
+        cursorwidth: "13px",
+        background: "",
+        cursorborder: "1px solid aquamarine",
+        cursorborderradius: 10,
+        zindex: 999,
+      });
+    // End trigger NiceScroll
+  }
 
 
   // Start trigger owl portfolio
