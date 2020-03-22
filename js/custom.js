@@ -91,10 +91,12 @@
 
 
 
-
+  // ********************* Start Loading page *********************
   $(window).on("load", function() {
     $(".loading-overlay").fadeOut();
-  });  
+  });
+  // ********************* End Loading page *********************
+
 
 
 
@@ -160,4 +162,14 @@
     loop: true
   });
   // End trigger owl
+
+
+  // Start Trigger WoW.js
+  var wow = new WOW(
+    {
+      offset: 150,
+    }
+  );
+  wow.init();
+  // End Trigger WoW.js
 
